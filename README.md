@@ -1,0 +1,1 @@
+# cmake-self-study-note
