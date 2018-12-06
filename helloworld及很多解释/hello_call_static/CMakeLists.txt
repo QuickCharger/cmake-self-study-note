@@ -12,3 +12,6 @@ ADD_EXECUTABLE(hello_call_static main.cpp)
 
 # 指定库
 target_link_libraries(hello_call_static hello_static.lib)
+
+#添加依赖，hello_call_static需要hello_static库，防止hello_call_static提前编译完导致编译失败
+add_dependencies(hello_call_static hello_static)

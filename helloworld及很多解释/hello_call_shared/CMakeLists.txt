@@ -12,3 +12,6 @@ ADD_EXECUTABLE(hello_call_shared main.cpp)
 
 # 指定库
 target_link_libraries(hello_call_shared hello_shared.lib)
+
+#添加依赖，hello_call_shared需要hello_shared库，防止hello_call_shared提前编译完导致编译失败
+add_dependencies(hello_call_shared hello_shared)
