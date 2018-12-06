@@ -20,7 +20,7 @@ MESSAGE( "\n\n")
 
 #ADD_SUBDIRECTORY(source_dir [binary_dir] [EXCLUDE_FROM_ALL])
 #将source_dir目录加入工程，指定输出路径为binnary_dir(包含中间结果)，EXECLUDE_FROM_ALL含义是将这个目录从编译过程中排除
-#ADD_SUBDIRECTORY(hello)
+ADD_SUBDIRECTORY(hello)
 ADD_SUBDIRECTORY(lib_hello_shared)
 ADD_SUBDIRECTORY(hello_call_shared)
 ADD_SUBDIRECTORY(lib_hello_static)
