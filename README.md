@@ -1,2 +1,2 @@
 # cmake-self-study-note
-简单的cmake自学笔记
+绠�鍗曠殑cmake鑷绗旇
