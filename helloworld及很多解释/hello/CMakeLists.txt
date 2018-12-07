@@ -7,3 +7,6 @@ SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
 # 第一参数为vcproj对应名称
 ADD_EXECUTABLE(hello ${files})
+
+# 安装 win下默认安装地址是"Program Files", 可在cmake时修改CMAKE_INSTALL_PREFIX指定默认位置
+INSTALL(TARGETS hello DESTINATION bin)
