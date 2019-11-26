@@ -2,6 +2,9 @@
 # 已知的搜索格式包含c cpp 不包含 h txt
 AUX_SOURCE_DIRECTORY(. files)
 
+# 排除指定文件,files里面的文件带有路径,排除时也需要添加路径
+LIST(REMOVE_ITEM files ./useless.cpp)
+
 # 指定exe的输出路径
 SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 
